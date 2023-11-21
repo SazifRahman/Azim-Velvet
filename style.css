@@ -122,11 +122,53 @@
 
                 /* mainArea Start */
 #mainArea{
+  position: relative;
   width: 100%;
   height: 100vh;
-  background-image: url(./image/clothing-rack.jpg);
+  background: url(./image/clothing-rack.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  opacity: 60%;
+}
+
+.overley{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.overley h1{
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+}
+
+.overley h2{
+  color: rgb(255, 255, 255);
+  font-size: 100px;
+}
+
+.overley button{
+  margin-top: 30px;
+  font-size: 20px;
+  height: 40px;
+  width: 100px;
+  border-radius:7px 20px 20px 7px;
+  background-color: rgb(49, 160, 204);
+}
+
+button a{
+  text-decoration: none;
+  color: #f6f6f6;
+  font-weight: 600;
+}
+
+.pages{
+  width: 84%;
+  height: 400px;
+  background-color: rgb(234, 234, 234);
+  margin: auto;
 }
