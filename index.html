@@ -4,39 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
     <title> Azim Velvet </title>
 </head>
 
 <body>
-    <header>                               <!-- NavBar Start -->
-                
-        <nav class="navBar">
-            <img src="./image/Azim-Velvet3.png" alt="Logo"/>
-            <div class="dropdown">
-                <button class="dropbtn"> <i class="fa fa-list-ul"></i> Category </button>
-                <div class="dropdown-content">
-                    <a href="#"> Jeans </a>
-                    <a href="#"> Shirt </a>
-                    <a href="#"> T-shirt </a>
-                    <a href="#"> Wallet </a>
+        <header>                               <!-- NavBar Start -->               
+            <nav class="navBar">
+                <img src="./image/Azim-Velvet3.png" alt="Logo"/>
+                <div class="dropdown">
+                    <button class="dropbtn btn-primary"> <i class="fa fa-list-ul"></i> Category </button>
+                    <div class="dropdown-content">
+                        <a href="#"> Jeans </a>
+                        <a href="#"> Shirt </a>
+                        <a href="#"> T-shirt </a>
+                        <a href="#"> Wallet </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="main">
-                <input type="search" placeholder="Type the search"> <i class="fa fa-search"></i>               
-            </div>
-            <div class="menuList">
-                <a href="#"> Home </a>
-                <a href="#"> <i class="fa-solid fa-cart-shopping"></i> Shop </a>
-                <a href="#"> Policy </a>
-                <a href="#"> Contact </a>
-            </div>
-        </nav>
-    </header>
     
-                                        <!-- MainArea Start -->
+                <div class="main">
+                    <input type="search" placeholder="Type the search"> <i class="fa fa-search"></i>               
+                </div>
+                <div class="menuList">
+                    <a href="#"> Home </a>
+                    <a href="#"> <i class="fa-solid fa-cart-shopping"></i> Shop </a>
+                    <a href="#"> Policy </a>
+                    <a href="#"> Contact </a>
+                </div>
+            </nav>
+        </header>
+                                            <!-- nainArea Start -->
     <main id="mainArea">
         <div class="overley">
             <div class="Text">
@@ -49,13 +50,32 @@
         </div>
     </main>
 
-    <section class="pages">
-        
-    </section>
+                                        <!-- CategoryArea Start -->
+    <div class="category">
+        <div class="cat_wrap">
+            <h1>Category</h1>
+            <div class="img">
+                <div class="image1">
+                    <img src="./image/image 1.jpeg" alt="Jeans"/>
+                    <div class="desc">
+                        <h5>something here</h5>
+                        <p> $20 </p>
+                    </div>
+                </div>
+                <div class="image1">
+                    <img src="./image/image 2.jpeg" alt="Jeans"/>
+                    <p> $20 </p>
+                </div>
+                <div class="image1">
+                    <img src="./image/image3.jpeg" alt="Jeans"/>
+                    <p> $20 </p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    
-
-    
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 
 </html>
