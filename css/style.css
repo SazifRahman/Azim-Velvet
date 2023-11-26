@@ -138,6 +138,7 @@
   background-color: rgba(0,0,0,0.5);
   display: flex;
   align-items: center;
+  justify-content: left;
   padding-left: 100px;
 }
 
@@ -148,60 +149,153 @@
 
 .overley h2{
   color: rgb(255, 255, 255);
-  font-size: 100px;
+  font-size: 150px;
 }
-
-.overley button{
-  margin-top: 30px;
-  font-size: 20px;
-  height: 40px;
-  width: 100px;
-  border-radius:7px 20px 20px 7px;
-  background-color: rgb(49, 160, 204);
-}
-
-button a{
-  text-decoration: none;
-  color: #f6f6f6;
-  font-weight: 600;
-}
-
-          /* CategoryArea Start */
 
 .category{
-  width:100%;
-  height:500px;
-  background-color:rgb(101, 102, 102);
-  padding:25px 0px;
+  width: 100%;
+  height: 400px;
+  padding-top: 20px;
 }
+
 .category h1{
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
-  color: white;
+  color: rgb(74, 155, 155);
 }
-.image1{
-  position: relative;
-}
-.img{
+
+.Image{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding: 20px 10px 0px 10px;
 }
-.img .image1 img{
-  height:250px;
-  width: 250px;
+
+.Image{
+  position: relative;
 }
-.img .image1 .desc{
- position: absolute;
- bottom:70px;
- right:120px;
- color:white;
- visibility: hidden;
+      /* image1 Start */
+
+.image1 img{
+  width: 300px;
+  height: 300px;
 }
-.img .image1:hover .desc{
+
+.Image .image1 .desc{
+  position: absolute;
+  color: #ffffff;
+  bottom: 60px;
+  left: 120px;
+  /* visibility: hidden; */
+}
+
+.Image .image1 img:hover{
+  border: 3px solid rgb(74, 155, 155);
+  border-radius: 20px;
+}
+
+/* .Image .image1:hover .desc{
   visibility: visible;
+} */
+
+.image1 .desc h5{
+  font-size: 40px;
+  opacity: 70%;
+  color: #fff;
 }
-.img .image1 img:hover{
-  border:1px solid white;
+       /* image2 Start */
+
+.image2 img{
+  width: 300px;
+  height: 300px;
+}
+
+.Image .image2 .desc{
+  position: absolute;
+  color: #ffffff;
+  bottom: 60px;
+  left: 430px;
+  /* visibility: hidden; */
+}
+
+.Image .image2 img:hover{
+  border: 3px solid rgb(75, 155, 155);
+  border-radius: 20px;
+}
+
+/* .Image .image2:hover .desc{
+  visibility: visible;
+} */
+
+.image2 .desc h5{
+  font-size: 40px;
+  opacity: 70%;
+  color: #fff;
+}
+
+       /* image3 Start */
+
+.image3 img{
+  width: 300px;
+  height: 300px;
+}
+
+.Image .image3 .desc{
+  position: absolute;
+  color: #ffffff;
+  bottom: 60px;
+  left: 720px;
+  /* visibility: hidden; */
+}
+
+.Image .image3 img:hover{
+  border: 3px solid rgb(75, 155, 155);
+  border-radius: 20px;
+}
+
+/* .Image .image3:hover .desc{
+  visibility: visible;
+} */
+
+.image3 .desc h5{
+  font-size: 40px;
+  opacity: 70%;
+  color: #fff;
+}
+      /* image4 Start */
+.image4 img{
+  width: 300px;
+  height: 300px;
+}
+
+.Image .image4 .desc{
+  position: absolute;
+  color: #ffffff;
+  bottom: 60px;
+  left: 1040px;
+  /* visibility: hidden; */
+
+}
+
+.Image .image4 img:hover{
+  border: 3px solid rgb(75,155,155);
+  border-radius: 20px;
+}
+
+/* .Image .image4:hover .desc{
+  visibility: visible;
+} */
+
+.image4 .desc h5{
+  font-size: 40px;
+  opacity: 70%;
+  color: #fff;
+}
+
+    /* Collection Area Start */
+
+.collectionArea{
+  height: 600px;
+  width: 100%;
+  background-color: bisque;
 }
