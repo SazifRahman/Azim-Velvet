@@ -134,9 +134,11 @@
 @keyframes slider{
   0%{background-image: url(../image/clothing-rack.jpg);
   }
-  50%{background-image: url(../image/image4.jpeg);
+  50%{background-image: url(../image/image15.jpg);
   }
-  from {opacity: 1} 
+  75%{background-image: url(../image/image16.jpg);
+  }
+  from {opacity: 1}
   to {opacity: 1}
 }
 
@@ -154,6 +156,17 @@
 .overley h1{
   color: rgb(255, 255, 255);
   font-size: 40px;
+}
+
+.overley h3{
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+
+.overley a{
+  text-decoration: none;
+  color: rgb(29, 239, 193);
+  font-size: 13px;
 }
 
 .overley h2{
@@ -202,7 +215,7 @@
 
 .Image .image1 img:hover{
   border: 3px solid rgb(74, 155, 155);
-  border-radius: 20px;
+  border-radius: 50px;
 }
 
 /* .Image .image1:hover .desc{
@@ -231,7 +244,7 @@
 
 .Image .image2 img:hover{
   border: 3px solid rgb(75, 155, 155);
-  border-radius: 20px;
+  border-radius: 50px;
 }
 
 /* .Image .image2:hover .desc{
@@ -261,7 +274,7 @@
 
 .Image .image3 img:hover{
   border: 3px solid rgb(75, 155, 155);
-  border-radius: 20px;
+  border-radius: 50px;
 }
 
 /* .Image .image3:hover .desc{
@@ -290,7 +303,7 @@
 
 .Image .image4 img:hover{
   border: 3px solid rgb(75,155,155);
-  border-radius: 20px;
+  border-radius: 50px;
 }
 
 /* .Image .image4:hover .desc{
@@ -312,107 +325,135 @@
 }
 
 .collectionArea{
+  flex-wrap: wrap;
+  gap: 3px;
   margin: auto;
-  margin-top: 30px;
-  height: 600px;
-  width: 80%;
+  margin-top: 25px;
+  height: 1021.5px;
+  width: 97%;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  /* align-items: center; */
+  justify-content: space-between;
   background-color: #f6f6f7;
   box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.2);
 }
-
-.collectionArea .collImage img{
-  height: 250px;
-  width: 200px;
-  margin: 15px;
-}
-
-.collectionArea .collImage2 img{
-  height: 250px;
-  width: 200px;
-  margin: 15px;
-}
-
-.collectionArea .collImage3 img{
-  height: 250px;
-  width: 200px;
-  margin: 15px;
-}
-
-.collectionArea .collImage img:hover{
-  border: 2px solid black;
-}
-
-.collectionArea .collImage2 img:hover{
-  border: 2px solid black;
-}
-
-.collectionArea .collImage{
-  position: relative;
-}
-.collectionArea .collImage2{
-  position: relative;
-}
-
-.collectionArea .collImage .collDesc{
+.collImage img{
   position: absolute;
-  left: 40%;
-  top: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(0);
+}
+.collImage img{
+  width: 200px;
+  height: 250px;
 }
 
-.collectionArea .collImage2 .collDesc{
-  position: absolute;
-  left: 40%;
-  top: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(0);
+.collImage img:hover{
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
-.collectionArea .collImage:hover .collDesc{
-  transform: scale(1);
+.collImage h1{
+  position: relative;
+  font-size: 30px;
+  color: #fff;
+  /* padding: 110px 70px; */
+  /* visibility: hidden; */
+  text-align: center;
 }
 
-.collectionArea .collImage2:hover .collDesc{
-  transform: scale(1);
+.collImage h1:hover{
+  visibility: visible;
 }
 
- 
-.collImage .collDesc p{
-  font-size: 25px;
-  font-weight: bold;
-  color: white;
-}
-
-.collImage2 .collDesc p{
-  font-size: 25px;
-  font-weight: bold;
-  color: white;
-}
-
-
-/* Footer Area Start */
+/* FooterArea Start */
 
 .footer{
   margin-top: 20px;
-  height: 300px;
+  height: 450px;
   width: 100%;
   background-color: beige;
+  display: flex;
 }
 
-.footer h1{
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+.footer .map{
+  height: 450px;
+  width: 50%;
+  border: 1.5px solid black;
+}
+.footer .box2{
+  height: 450px;
+  width: 50%;
+}
+
+.footer .box2 .form{
+  height: 320px;
+  width: 80%;
   margin: auto;
+  box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.2);
+  background-color: rgb(34, 32, 52);
+  border: 2px solid white;
+}
+
+.box2 .form{
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  padding: 11px 20px 11px 20px;
+}
+
+.box2 .form .name input{
+  height: 30px;
+  width: 450px;
+  background: transparent;
+  border: 0;
+  color: rgb(203, 203, 203);
+  font-style: italic;
+}
+
+.box2 .form .email input{
+  height: 30px;
+  width: 450px;
+  background: transparent;
+  border: 0;
+  color: rgb(203, 203, 203);
+  font-style: italic;
+}
+.box2 .form .msg input{
+  height: 90px;
+  width: 450px;
+  background: transparent;
+  border: 0;
+  color: rgb(203, 203, 203);
+  font-style: italic;
+}
+
+/* icons */
+.footer .icon{
+  margin-top: 50px;
+  font-size: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .icon .facebook:hover{
+  color: rgb(3, 3, 255);
+}
+.footer .icon .twitter:hover{
+  color: blue;
+}
+.footer .icon .instagram:hover{
+  color: rgb(237, 151, 165);
+}
+.footer .icon .linkedin:hover{
+  color: rgb(88, 88, 251);
+}
+.footer .icon .youtube:hover{
+  color: rgb(255, 3, 3);
+}
+
+/* copyright */
+.footer .copyright h1{
+  margin-top: 20px;
+  text-align: center;
+  color: rgb(169, 169, 169);
+  font-size: 15px;
 }
